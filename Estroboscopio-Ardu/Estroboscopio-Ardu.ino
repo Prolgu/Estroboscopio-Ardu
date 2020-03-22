@@ -1,21 +1,21 @@
-//De base estoy utilizando un arduino mega 2560 la idea general 
-//seria utilizar un arduino nano, con eso se podria crear un dispositivo
-//como los que se pueden encontrar en el mercado(tipo pistola de lectura)
-//En el A0 conectamos el el cursor del potenciometro (pata central)
-//las otras dos patas van conectadas a GND y +5V del Arduino
-//con map() en el A0 usamos el DAC propio de arduino para
-//convertir una tension analogica en datos digitales
-//de esta forma podemos operar pasando el dato leido a una variable
-//que va a ser la que genere el delay entre un estado y alto
-//del led (ledPin=13)
-//el dato analogico va a ser entre 0-1023 siendo equivalente a 10-150ms
-//todavia sigo trabajando en la mejor forma de que el serial
-//solo imprima cuando se lo ordene por medio de un boton (botonPin)
-//al conectarse el terminal serial mando la cadena Estroboscopio-Ardu
-//de esta forma me aseguro de la correcta conexion con el pc
-//estoy ppensando implementar el uso de una sola libreria para imprimir en
-//un lcd, por medio del protocolo I2C.
-
+/*De base estoy utilizando un arduino mega 2560 la idea general
+seria utilizar un arduino nano, con eso se podria crear un dispositivo
+como los que se pueden encontrar en el mercado(tipo pistola de lectura)
+En el A0 conectamos el el cursor del potenciometro (pata central)
+las otras dos patas van conectadas a GND y +5V del Arduino
+con map() en el A0 usamos el DAC propio de arduino para
+convertir una tension analogica en datos digitales
+de esta forma podemos operar pasando el dato leido a una variable
+que va a ser la que genere el delay entre un estado y alto
+del led (ledPin=13)
+el dato analogico va a ser entre 0-1023 siendo equivalente a 10-150ms
+todavia sigo trabajando en la mejor forma de que el serial
+solo imprima cuando se lo ordene por medio de un boton (botonPin)
+al conectarse el terminal serial mando la cadena Estroboscopio-Ardu
+de esta forma me aseguro de la correcta conexion con el pc
+estoy ppensando implementar el uso de una sola libreria para imprimir en
+un lcd, por medio del protocolo I2C.
+*/
 
 
 
