@@ -28,8 +28,9 @@
 //el led va a ser cambiado despues de probar el correcto funcionamiento del programa
 //de momento solo esta puesto en el pin 13 para aprovechar el led que arduino ya trae.
 
+//Definicion de variables e inicializacion de valores
 const int ledPin = 13;//constantes
-const int botonPin = 2;//constantes (A ser implementado)
+const int botonPin = 2;//constantes
 const int sensorPin = A0;//contantes
 int poteValor = 0;
 float freq = 0;
@@ -73,15 +74,15 @@ void Generador(int a,int b)//defino la funcion Generador con
 
   void Impresion()
  {
- int buttonState = digitalRead(botonPin);
+ boolean buttonState = digitalRead(botonPin);
 
   // Chequea el push button.
   if (buttonState == LOW) {
       Serial.print("RPM = ");
-      freq = (1000)/(valorSalida+1);
-      Serial.println(60*freq);
+      freq = (60000)/(valorSalida);
+      Serial.println(freq);
   } 
   else {
-  delay(1);
+  //delay(1);
   }
    }
