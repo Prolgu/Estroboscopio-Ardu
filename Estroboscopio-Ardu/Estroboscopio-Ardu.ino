@@ -53,12 +53,10 @@ void loop() {
   poteValor = analogRead(sensorPin);
   valorSalida=map(poteValor,0,1023,5,200);//divido el valor del pote en  1024 partes equivalentes a 5-200ms
   Generador(ledPin,valorSalida);//llamo a la funcion y le doy los argumentos
- // Serial.print("RPM = ");
-  //freq = (1000)/(valorSalida+1);
-  //Serial.println(60*freq);
-  Impresion();
+  Impresion();// Llamado a la funcion que imprime
   
 }
+
 
 //Con esta funcion gneramos un puso cuadrado.(No es la mejor opcion pero es sin librerias)
 // Generador(pin,int.)
