@@ -23,10 +23,10 @@
   de esta forma me aseguro de la correcta conexion con el pc;
   estoy pensando implementar el uso de una sola libreria (Wire.h) para imprimir en
   un lcd, por medio del protocolo I2C.
+  
+  -El led va a ser cambiado despues de probar el correcto funcionamiento del programa
+  de momento solo esta puesto en el pin 13 para aprovechar el led que arduino ya trae.
 */
-
-//el led va a ser cambiado despues de probar el correcto funcionamiento del programa
-//de momento solo esta puesto en el pin 13 para aprovechar el led que arduino ya trae.
 
 //Definicion de variables e inicializacion de valores
 const int ledPin = 13;//constantes
@@ -38,7 +38,7 @@ float valorSalida = 0;
 
 void setup() {
  pinMode(ledPin, OUTPUT); //defino ledPin como salida
- pinMode(botonPin, INPUT_PULLUP); //defino botonPin como entrada y activo el pullup interno (A ser implementado)
+ pinMode(botonPin, INPUT_PULLUP); //defino botonPin como entrada y activo el pullup interno
  Serial.begin(9600);   // inicializa el serial para mandar datos
    while (!Serial) {
     ;
@@ -60,7 +60,7 @@ void loop() {
   
 }
 
-//con esta funcion gneramos un puso cuadrado.
+//Con esta funcion gneramos un puso cuadrado.(No es la mejor opcion pero es sin librerias)
 // Generador(pin,int.)
 void Generador(int a,int b)//defino la funcion Generador con
 {// a y b como parametros del pin y del delay
