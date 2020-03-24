@@ -9,9 +9,9 @@ potenciometro.
 - impresion en terminal.
 
 **Falta por definir:**
-- Imprimir el calculo de RPM.
-- Posible implementacion de lcd.
-- Posible trigger para impresion serial.
+-~~ Imprimir el calculo de RPM.~~
+-~~ Posible implementacion de lcd.~~
+-~~ Posible trigger para impresion serial.~~
 
 ## Funcionamiento
 Basicamente se usa el ejemplo "Blink", solo que se crea una funcion con dos parametros.
