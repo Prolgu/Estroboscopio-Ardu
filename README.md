@@ -1,4 +1,4 @@
- Estroboscopio-Ardu
+ ArduScopio: Un estroboscopio implementado en Arduino.
 -------------------
 
 
